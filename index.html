@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Assignment 3: contact page</title>
+    <!--created by Derica Li-->
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fira+Mono:wght@400;500;700&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fira+Mono:wght@400;500;700&family=Prata&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+    h2 {
+      font-family: "Fira Mono";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0;
+      padding-bottom: 32px;
+      padding-top: 16px;
+    }
+  .nav {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    top: 0;
+    margin: 0;
+    line-height: 0;
+    /*background: #F6F5E0;*/
+  }
+    
+  a {
+    text-decoration: none;
+    font-family: "Fira Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+    color: #D00003;
+    padding: 0 8px;
+  }
+    .nav .items-right a {
+      color: #D00003;
+    }
+    .nav .items-left a {
+      color: #D00003;
+    }
+  
+    .nav a:hover {
+      color: #E77F81;
+    }
+
+   .logo {
+      font-family: VT323, monospace;
+      font-size: 30px; 
+      font-style: normal;
+      font-weight: 400; 
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 0;
+      color: #D00003;
+      line-height: 0;
+    }
+
+    .logo:hover {
+      color: #E77F81;
+    }
+
+    .mySlides: {display:none;}
+
+    .btn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #D00003;
+      padding: 16px;
+      margin: 0px;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .btn:first-of-type  {
+      left: 0;
+    }
+    
+    .btn:last-of-type{
+      right: 0;
+    }
+    
+    .btn:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .icon {
+      width: 24px; 
+      height: 24px;
+    }
+    
+    .btn .icon:hover {
+      color: #E77F81;
+    }
+    
+    .w3-display-container {
+      position: relative; 
+      width: 100%; 
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .w3-display-container img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover; 
+      display: block;  
+    }
+
+    .caption {
+      background-color: #D00003;
+      position: absolute; 
+      /*bottom: 16px; 
+      right: 16px; */
+      padding: 16px;
+      bottom: 0;
+      left: 75%;
+      color: #F6F5E0; 
+      font-family: "Fira Mono", monospace;
+      font-size: 12px; 
+    }
+    
+    
+
+  </style>
+  
+  <body>
+    <div class="nav">
+      <div class="item-left">
+        <a href="https://d88li.github.io/Assignment-3/" target="_self">
+        <div class="logo">
+          <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">D</span>erica <span style="font-family:ballet;font-size:40px;font-weight:400;line-height:normal">L</span>i
+        </div>
+        </a>
+      </div>
+      <div class="items-right">
+        <a href="/">Print</a>
+        <a href="https://d88li.github.io/photography-page/" target="_self">Photography</a>
+        <a href="/">Web</a>
+        <a href="https://d88li.github.io/contact-page/" target="_self">Info</a>
+      </div>
+    </div>
+    
+      <div class="w3-display-container mySlides">
+        <img src="Magazine Prototype2.jpg" style="width:100%" alt="cover spread">
+        <div class="caption">
+          <h2>
+            Print
+          </h2>
+          This was an independent project in which I visually rounded up the design work I created in winter 2024. I organized the spreads to showcase my logo, product, and poster designs. 
+        </div>
+      </div>
+    
+      <div class="w3-display-container mySlides">
+        <img src="Magazine Prototype3.jpg" style="width:100%" alt="logo spread">
+        <div class="caption">
+          <h2>
+            Print
+          </h2>
+          This was an independent project in which I visually rounded up the design work I created in winter 2024. I organized the spreads to showcase my logo, product, and poster designs. 
+        </div>
+      </div>
+    
+      <div class="w3-display-container mySlides">
+        <img src="Magazine Prototype4.jpg" style="width:100%" alt="emotional object spread">
+        <div class="caption">
+          <h2>
+            Print
+          </h2>
+          This was an independent project in which I visually rounded up the design work I created in winter 2024. I organized the spreads to showcase my logo, product, and poster designs. 
+        </div>
+      </div>
+    
+      <div class="w3-display-container mySlides">
+        <img src="Magazine Prototype5.jpg" style="width:100%" alt="poster spread">
+        <div class="caption">
+          <h2>
+            Print
+          </h2>
+          This was an independent project in which I visually rounded up the design work I created in winter 2024. I organized the spreads to showcase my logo, product, and poster designs. 
+        </div>
+      </div>
+    
+    <button class="btn" onclick="plusDivs(-1)">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </svg>
+      </button>
+      
+      <button class="btn" onclick="plusDivs(1)">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+      </button>
+    
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  </script>
+  </body>
+</html>
